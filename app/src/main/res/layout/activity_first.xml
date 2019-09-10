@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dgray">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="@dimen/dim_20xl"
+        android:layout_height="@dimen/dim_20xl"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/plantt" />
+
+    <ImageView
+        android:id="@+id/b_g"
+        android:layout_width="@dimen/dim_20xl"
+        android:layout_height="@dimen/dim_20xl"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/cropplant" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/dim_20xl"
+        android:layout_height="@dimen/dim_20xl"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/dim_15xl"
+        android:src="@drawable/logo"
+
+        />
+
+    <Button
+        android:id="@+id/start_activity_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/dim_8xl"
+        android:layout_marginStart="@dimen/dim_8xl"
+        android:background="@drawable/button_style"
+        android:text="@string/order"
+        android:textColor="@color/white"
+        android:layout_below="@+id/logo"/>
+
+    <Button
+        android:id="@+id/start_activity_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/dim_8xl"
+        android:layout_marginStart="@dimen/dim_8xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@drawable/button_style"
+        android:text="@string/seller"
+        android:textColor="@color/white"
+        android:layout_below="@+id/start_activity_client"/>
+
+</RelativeLayout>

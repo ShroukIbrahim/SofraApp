@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dim_m"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/dim_m"
+    app:cardElevation="@dimen/dim_m">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl">
+
+        <ImageView
+            android:id="@+id/notify_icon"
+            android:layout_width="@dimen/dim_5xl"
+            android:layout_height="@dimen/dim_5xl"
+            android:src="@drawable/notification"/>
+        <TextView
+            android:id="@+id/notify_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_marg"
+            android:textSize="@dimen/txt_size_l"
+            android:layout_toEndOf="@id/notify_icon"
+            tools:text="@string/title_notifications" />
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="@dimen/dim_3xl"
+            android:layout_height="@dimen/dim_3xl"
+            android:src="@drawable/ic_access_time_black_24dp"
+            android:layout_below="@id/notify_name"
+            android:layout_toStartOf="@id/time"
+           />
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_l"
+            android:layout_below="@id/notify_name"
+            android:layout_marginEnd="@dimen/dim_10xl"
+            android:layout_marginStart="@dimen/dim_marg"
+            android:layout_alignParentEnd="true"
+            tools:text="@string/time" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_sss">1dp</dimen>
+    <dimen name="dim_ss">2dp</dimen>
+    <dimen name="dim_s">4dp</dimen>
+    <dimen name="dim_mm">5dp</dimen>
+    <dimen name="dim_m">8dp</dimen>
+    <dimen name="dim_r">10dp</dimen>
+    <dimen name="dim_l">16dp</dimen>
+
+    <dimen name="dim_xl">10dp</dimen>
+    <dimen name="dim_2xl">20dp</dimen>
+    <dimen name="dim_3xl">30dp</dimen>
+    <dimen name="dim_4xl">40dp</dimen>
+    <dimen name="dim_5xl">50dp</dimen>
+    <dimen name="dim_6xl">60dp</dimen>
+    <dimen name="dim_7xl">70dp</dimen>
+    <dimen name="dim_8xl">80dp</dimen>
+    <dimen name="dim_9xl">90dp</dimen>
+    <dimen name="dim_10xl">100dp</dimen>
+    <dimen name="dim_11xl">110dp</dimen>
+    <dimen name="dim_12xl">120dp</dimen>
+    <dimen name="dim_13xl">130dp</dimen>
+    <dimen name="dim_14xl">140dp</dimen>
+    <dimen name="dim_15xl">150dp</dimen>
+    <dimen name="dim_16xl">160dp</dimen>
+    <dimen name="dim_17xl">170dp</dimen>
+    <dimen name="dim_18xl">180dp</dimen>
+    <dimen name="dim_19xl">190dp</dimen>
+    <dimen name="dim_20xl">200dp</dimen>
+    <dimen name="dim_21xl">210dp</dimen>
+    <dimen name="dim_22xl">220dp</dimen>
+    <dimen name="dim_23xl">230dp</dimen>
+    <dimen name="dim_24xl">240dp</dimen>
+    <dimen name="dim_25xl">250dp</dimen>
+    <dimen name="dim_26xl">260dp</dimen>
+    <dimen name="dim_27xl">270dp</dimen>
+    <dimen name="dim_50xl">500dp</dimen>
+
+
+    <dimen name="dim_28dp">28dp</dimen>
+
+    <dimen name="txt_size_sss">8sp</dimen>
+    <dimen name="txt_size_ss">10sp</dimen>
+    <dimen name="txt_size_s">12sp</dimen>
+    <dimen name="txt_size_m">16sp</dimen>
+    <dimen name="txt_size_l">20sp</dimen>
+    <dimen name="txt_size_ll">22sp</dimen>
+    <dimen name="txt_size_xl">24sp</dimen>
+    <dimen name="txt_size_2xl">28sp</dimen>
+    <dimen name="txt_size_3xl">32sp</dimen>
+    <dimen name="txt_size_4xl">36sp</dimen>
+    <dimen name="txt_size_5xl">40sp</dimen>
+    <dimen name="txt_size_6xl">44sp</dimen>
+
+    <dimen name="dim_marg">10dp</dimen>
+    <dimen name="dim_marg_l">20dp</dimen>
+</resources>

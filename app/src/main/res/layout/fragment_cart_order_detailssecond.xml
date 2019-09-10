@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.Client.homecycle.cart.CartOrderDetailssecondFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/restaurant_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_11xl"
+        android:layout_margin="@dimen/dim_xl"
+        android:backgroundTint="@color/Dgray"
+        android:background="@drawable/row_style">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/restaurant_image"
+            android:layout_width="@dimen/dim_10xl"
+            android:layout_height="@dimen/dim_10xl"
+            android:src="@drawable/reslogo"/>
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/restaurant_image"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:text="@string/restaurant_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl" />
+
+
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_marg"
+            android:text="@string/day"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"
+            android:layout_below="@id/restaurant_name"
+            android:layout_toEndOf="@id/restaurant_image"/>
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_marg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"
+            android:layout_below="@id/restaurant_name"
+            android:layout_toEndOf="@id/txt_date"/>
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/adrees_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:layout_below="@id/restaurant_layout"
+        android:layout_margin="@dimen/dim_xl"
+        android:backgroundTint="@color/Dgray"
+        android:background="@drawable/row_style">
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl" />
+
+
+        <TextView
+            android:id="@+id/order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"
+            android:layout_toEndOf="@id/txt_address"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_20xl"
+        android:layout_below="@id/adrees_layout"
+        android:layout_margin="@dimen/dim_xl"
+        android:backgroundTint="@color/Dgray"
+        android:background="@drawable/row_style">
+
+
+        <TextView
+            android:id="@+id/txt_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_marg"
+            android:text="@string/order_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_details">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/order_det_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_15xl"
+        android:layout_below="@id/order_layout"
+        android:layout_margin="@dimen/dim_xl"
+        android:backgroundTint="@color/Dgray"
+        android:background="@drawable/row_style">
+
+        <TextView
+            android:id="@+id/txt_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/orderprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_order_price"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/txt_delivery_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order_price"
+            android:text="@string/delivery_costt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/delivery_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderprice"
+            android:layout_toEndOf="@+id/txt_delivery_price"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/txt_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_delivery_price"
+            android:text="@string/total_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delivery_cost"
+            android:layout_toEndOf="@+id/txt_total_price"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+
+        <TextView
+            android:id="@+id/txt_paymentby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_total_price"
+            android:text="@string/Payment_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+        <TextView
+            android:id="@+id/paymentby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_price"
+            android:layout_toEndOf="@+id/txt_paymentby"
+            android:text="20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"/>
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

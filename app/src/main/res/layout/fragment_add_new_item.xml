@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragment.Restaurant.homecycle.RAddNewItemFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_product_image"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <ImageView
+        android:id="@+id/add_product_image"
+        android:layout_width="@dimen/dim_15xl"
+        android:layout_height="@dimen/dim_10xl"
+        android:layout_below="@+id/txt"
+        android:src="@drawable/base"
+        android:scaleType="fitXY"
+        android:background="@drawable/row_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_2xl"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_product_image"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:hint="@string/product_name"
+        android:background="@drawable/row_style"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/product_dec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_7xl"
+        android:layout_below="@+id/product_name"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:hint="@string/product_dec"
+        android:background="@drawable/row_style"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_dec"
+        android:hint="@string/price"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:background="@drawable/row_style"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/product_offer_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        android:hint="@string/offer_price"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:visibility="gone"
+        android:background="@drawable/row_style"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/product_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_offer_price"
+        android:hint="@string/preparing_time"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:background="@drawable/row_style"/>
+
+    <Button
+        android:id="@+id/add_product"
+        android:layout_width="@dimen/dim_20xl"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_time"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"/>
+        <ProgressBar
+            android:id="@+id/Progress_Bar"
+            style="@style/StyleProgressBar" />
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

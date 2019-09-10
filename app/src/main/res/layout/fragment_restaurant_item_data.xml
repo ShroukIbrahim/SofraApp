@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/restaurant_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_25xl"
+        android:layout_margin="@dimen/dim_2xl">
+        <ImageView
+            android:id="@+id/restaurant_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pizzamin"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_10xl"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/row_style">
+
+                <TextView
+                    android:id="@+id/restaurant_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/txt_size_xl"
+                    tools:text="@string/restaurant_name" />
+
+                <TextView
+                    android:id="@+id/item_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurant_item_name"
+                    tools:text="@string/restaurant_des" />
+
+                <TextView
+                    android:id="@+id/item_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_description"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_l" />
+
+                <TextView
+                    android:id="@+id/price_of_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_description"
+                    android:layout_toEndOf="@+id/item_cost"
+                    android:text="1000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_l" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_description"
+                    android:layout_toEndOf="@id/price_of_item"
+                    android:text="@string/SR"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_l" />
+
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preparingtime"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_below="@id/restaurant_image"/>
+
+    <TextView
+        android:id="@+id/preparing_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:layout_below="@id/restaurant_image"
+        android:layout_toEndOf="@+id/txt"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dim_ss"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minute"
+        android:textColor="@color/black"
+        android:layout_below="@id/restaurant_image"
+        android:layout_toEndOf="@+id/preparing_time"
+        android:layout_marginStart="@dimen/dim_ss"
+        android:layout_marginBottom="@dimen/dim_xl"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:background="@color/Dgray"
+        android:layout_below="@id/time"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"></View>
+    <TextView
+        android:id="@+id/special_order_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:text="@string/special_order"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:textColor="@color/black"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/special_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_9xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginBottom="@dimen/dim_xl"
+        android:hint="@string/enter_your_order_here"
+        android:layout_below="@+id/special_order_txt"
+        android:background="@drawable/row_style"/>
+    <View
+        android:id="@+id/t_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:background="@color/Dgray"
+        android:layout_below="@id/special_order"></View>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_6xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_below="@id/t_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textSize="@dimen/dim_2xl"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:textColor="@color/black"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:backgroundTint="@color/white"
+            app:fabSize="mini"
+            />
+        <TextView
+            android:id="@+id/quantity_num"
+            android:layout_width="@dimen/dim_10xl"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:background="@drawable/row_style"
+            android:gravity="center"
+            android:textSize="@dimen/dim_2xl"
+            android:text="1"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:backgroundTint="@color/white"
+            app:fabSize="mini"
+            />
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/ic_shopping_cart_white_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:layout_below="@+id/layout" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.Client.homecycle.restaurant.RestaurantDataFragment">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/restaurant_image"
+    android:layout_width="@dimen/dim_15xl"
+    android:layout_height="@dimen/dim_15xl"
+    android:layout_centerHorizontal="true"
+    tools:src="@drawable/reslogo"
+    android:layout_marginTop="@dimen/dim_xl"
+    />
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurant_image"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_centerHorizontal="true"
+        android:text="@string/restaurant_name"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:layout_below="@id/restaurant_name"
+        android:background="@color/Dgray"
+        android:layout_marginTop="@dimen/dim_2xl"
+        app:tabIndicatorColor="@android:color/black"
+
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab"
+        android:id="@+id/view_pag"
+        />
+
+</RelativeLayout>

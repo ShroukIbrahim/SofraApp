@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.usercyclefragmants.LoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/login_layout_style">
+
+        <ImageView
+            android:layout_width="@dimen/dim_13xl"
+            android:layout_height="@dimen/dim_13xl"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/dim_4xl"
+            android:layout_marginBottom="@dimen/dim_4xl"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_3xl" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_fragment_email_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_margin="@dimen/dim_3xl"
+        android:background="@drawable/row_style"
+        android:drawableStart="@drawable/ic_email_gray_24dp"
+        android:drawablePadding="@dimen/dim_2xl"
+        android:hint="@string/email"
+        android:inputType="text|number" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_fragment_password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_fragment_email_txt"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:background="@drawable/row_style"
+        android:drawableStart="@drawable/ic_vpn_key_gray_24dp"
+        android:drawablePadding="@dimen/dim_2xl"
+        android:hint="@string/password"
+
+        />
+
+    <TextView
+        android:id="@+id/login_fragment_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_fragment_password_txt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:text="@string/forget_password" />
+
+    <Button
+        android:id="@+id/login_fragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_fragment_forget_password"
+        android:layout_margin="@dimen/dim_3xl"
+        android:background="@drawable/row_style"
+        android:backgroundTint="@color/orange"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_3xl"
+        android:text="@string/register_txt"
+
+        />
+
+    <TextView
+        android:id="@+id/login_fragment_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_3xl"
+        android:layout_toEndOf="@+id/txt"
+        android:text="@string/register"
+        android:textColor="@color/orange" />
+
+    <ProgressBar
+        android:id="@+id/Progress_Bar"
+        style="@style/StyleProgressBar" />
+
+
+</RelativeLayout>

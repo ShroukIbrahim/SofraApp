@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EgyadvTask</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="email">Email/Mobile</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="register_txt">do not have an account?</string>
+    <string name="register">Register</string>
+    <string name="welcom">Welcome To AI</string>
+</resources>

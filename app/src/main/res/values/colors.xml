@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3699db</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="login_bnt">#FF3BB54B</color>
+    <color name="create_account_bnt">#3699db</color>
+    <color name="gray">#FAFAFA</color>
+    <color name="Dgray">#F5F5F5</color>
+    <color name="maven">#2f3f51</color>
+    <color name="red">#DC2E53</color>
+    <color name="register_bg">#896274</color>
+</resources>

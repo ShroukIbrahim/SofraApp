@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_20xl"
+    android:layout_margin="@dimen/dim_m"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/dim_m"
+    app:cardElevation="@dimen/dim_m">
+    <RelativeLayout
+        android:id="@+id/restaurant_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/restaurant_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pizzamin"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_10xl"
+        android:layout_margin="@dimen/dim_m"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/dim_m"
+        app:cardElevation="@dimen/dim_m">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dim_marg">
+
+            <TextView
+                android:id="@+id/restaurant_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/txt_size_xl"
+                tools:text="@string/restaurant_name" />
+
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/restaurant_item_name"
+                tools:text="@string/restaurant_des" />
+
+            <TextView
+                android:id="@+id/item_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_description"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_l" />
+
+            <TextView
+                android:id="@+id/price_of_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_description"
+                android:layout_toEndOf="@+id/item_cost"
+                android:text="1000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_l" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_description"
+                android:layout_toEndOf="@id/price_of_item"
+                android:text="@string/SR"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_l" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

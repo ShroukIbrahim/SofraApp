@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/dim_15xl"
+    android:layout_margin="@dimen/dim_m"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/restaurant_image"
+            android:layout_width="@dimen/dim_10xl"
+            android:layout_height="@dimen/dim_10xl"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/dim_2xl"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:src="@drawable/reslogo" />
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3xl"
+            android:layout_marginStart="@dimen/dim_marg"
+            android:layout_toEndOf="@+id/restaurant_image"
+            android:text="@string/restaurant_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xl"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_name"
+            android:layout_marginStart="@dimen/dim_marg"
+            android:layout_toEndOf="@+id/restaurant_image"
+            android:textColor="@color/red"
+            android:text="@string/order_num" />
+
+        <TextView
+            android:id="@+id/num_of_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_toEndOf="@+id/order_num"
+            android:textColor="@color/red"
+            android:text="@string/order_of_num" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_num"
+            android:layout_marginStart="@dimen/dim_marg"
+            android:layout_toEndOf="@+id/restaurant_image"
+            android:textColor="@color/red"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/num_of_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_num"
+            android:layout_toEndOf="@+id/total"
+            android:textColor="@color/red"
+            android:text="@string/order_of_num" />
+        <TextView
+            android:id="@+id/price_of_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_num"
+            android:layout_toEndOf="@+id/num_of_total"
+            android:textColor="@color/red"
+            android:text="@string/SR" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_sss"
+            android:background="@color/Dgray"
+            android:layout_marginBottom="@dimen/dim_xl"
+            android:layout_alignParentBottom="true"></View>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

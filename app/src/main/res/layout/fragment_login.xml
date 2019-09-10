@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginimage"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10xl"
+        android:fontFamily="@font/crete_round"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_4xl"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fragment_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:textColorLink="@color/white"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fragment_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_login_email"
+        android:textColorLink="@color/white"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"/>
+
+    <TextView
+        android:id="@+id/fragment_login_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetpassword"
+        android:layout_below="@+id/fragment_login_password"
+        android:linksClickable="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/fragment_login_login"
+        android:layout_width="@dimen/dim_15xl"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_login_forget_password"
+        android:text="@string/login"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@drawable/button_style"
+        android:drawableEnd="@drawable/login"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+    <Button
+        android:id="@+id/fragment_login_open_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@color/register_bg"
+        android:text="@string/register"
+        />
+    <ProgressBar
+        android:id="@+id/LoginFragment_Progress_Bar"
+        style="@style/StyleProgressBar" />
+</RelativeLayout>
+</RelativeLayout>

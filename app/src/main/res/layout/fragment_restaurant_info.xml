@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragment.Client.homecycle.restaurant.RestaurantInfoFragment">
+
+   <TextView
+       android:id="@+id/stats_txt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/status"
+       android:textColor="@color/black"
+       android:textSize="@dimen/dim_2xl"
+       android:layout_marginStart="@dimen/dim_2xl"
+       android:layout_marginTop="@dimen/dim_2xl"/>
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/stats_txt"
+        tools:text="@string/status"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_12xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <View
+        android:id="@+id/s_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_below="@id/stats"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:background="@color/Dgray" />
+    <TextView
+        android:id="@+id/city_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_view"
+        android:text="@string/city"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/city_txt"
+        android:layout_below="@id/s_view"
+        tools:text="@string/city"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_15xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <View
+        android:id="@+id/c_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_below="@id/city"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@color/Dgray" />
+
+    <TextView
+        android:id="@+id/region_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c_view"
+        android:text="@string/region"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/city_txt"
+        android:layout_below="@id/c_view"
+        tools:text="@string/region"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_15xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <View
+        android:id="@+id/r_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_below="@id/region"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@color/Dgray" />
+
+    <TextView
+        android:id="@+id/minimum_charger_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_view"
+        android:text="@string/minimum_charger"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+
+    <TextView
+        android:id="@+id/minimum_charger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/city_txt"
+        android:layout_below="@id/r_view"
+        tools:text="@string/minimum_charger"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_15xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <View
+        android:id="@+id/m_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_below="@id/minimum_charger"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@color/Dgray" />
+
+    <TextView
+        android:id="@+id/delivery_cost_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_view"
+        android:text="@string/delivery_cost"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+
+    <TextView
+        android:id="@+id/delivery_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/city_txt"
+        android:layout_below="@id/m_view"
+        tools:text="@string/delivery_cost"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_15xl"
+        android:layout_marginTop="@dimen/dim_2xl"/>
+    <View
+        android:id="@+id/d_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_ss"
+        android:layout_below="@id/region"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@color/Dgray" />
+
+
+
+
+</RelativeLayout>

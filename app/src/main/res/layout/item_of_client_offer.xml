@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_15xl"
+    android:layout_margin="@dimen/dim_m"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/gray"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:background="@drawable/background_of_resturant"
+            android:backgroundTint="@color/Dgray">
+
+            <TextView
+                android:id="@+id/offer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_8xl"
+                android:layout_marginTop="@dimen/dim_4xl"
+                android:text="@string/restaurant_name"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/get_offer"
+                android:layout_width="@dimen/dim_20xl"
+                android:layout_height="@dimen/dim_3xl"
+                android:layout_below="@+id/offer_name"
+                android:layout_marginStart="@dimen/dim_8xl"
+                android:layout_marginTop="@dimen/dim_xl"
+                android:background="@drawable/button_style"
+                android:text="@string/get_it_now"
+                android:textColor="@color/white"
+
+                />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/restaurant_Image"
+            android:layout_width="@dimen/dim_15xl"
+            android:layout_height="@dimen/dim_12xl"
+            android:layout_centerVertical="true"
+            android:src="@drawable/reslogo" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

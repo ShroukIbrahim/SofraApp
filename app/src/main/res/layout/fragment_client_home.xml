@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+    <RelativeLayout
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="@dimen/dim_xl"
+        android:backgroundTint="@color/gray"
+        android:background="@drawable/gray_row_style">
+
+        <Spinner
+            android:id="@+id/restaurant_city_filter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:background="@android:color/transparent"
+            style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+        <ImageView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_downward_red_24dp" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/keyword_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_margin="@dimen/dim_xl"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/gray_row_style">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/restaurant_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_4xl"
+                android:background="@color/gray"
+
+                android:hint="@string/restaurant_name"
+                android:layout_marginEnd="@dimen/dim_2xl"
+               />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_4xl"
+              android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_search_red_24dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurant_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_xl"
+        android:layout_below="@+id/filter_layout">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

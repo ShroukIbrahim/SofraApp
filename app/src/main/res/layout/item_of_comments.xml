@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_10xl"
+    android:layout_margin="@dimen/dim_m"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/dim_m"
+    app:cardElevation="@dimen/dim_m">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_xl">
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_l"
+            tools:text="@string/client_name" />
+        <TextView
+            android:id="@+id/client_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_name"
+            android:layout_marginStart="@dimen/dim_2xl"
+            tools:text="@string/comment_review"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dim_2xl"
+            android:layout_marginEnd="@dimen/dim_2xl"
+            android:src="@drawable/ic_tag_faces_black_24dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

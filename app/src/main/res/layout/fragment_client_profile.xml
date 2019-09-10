@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_profile_client_image"
+        android:layout_width="@dimen/dim_15xl"
+        android:layout_height="@dimen/dim_15xl"
+        android:src="@drawable/ic_perm_identity_black1_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:layout_marginBottom="@dimen/dim_3xl"
+        app:civ_circle_background_color="@color/Dgray"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/maven" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fragment_profile_client_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_client_image"
+        android:textColorLink="@color/white"
+        android:hint="@string/client_name"
+        android:textColorHint="@color/black"
+        android:background="@drawable/gray_row_style"
+        android:drawableStart="@drawable/ic_perm_identity_black1_24dp"
+        android:inputType="text"
+        android:drawablePadding="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:layout_marginBottom="@dimen/dim_2xl"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fragment_profile_client_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_client_name"
+        android:hint="@string/email"
+        android:background="@drawable/gray_row_style"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:layout_marginBottom="@dimen/dim_2xl"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fragment_profile_client_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_profile_client_email"
+        android:textColorLink="@color/white"
+        android:hint="@string/phone_number"
+        android:textColorHint="@color/black"
+        android:background="@drawable/gray_row_style"
+        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+        android:inputType="phone"
+        android:drawablePadding="@dimen/dim_xl"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:layout_marginBottom="@dimen/dim_2xl">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <RelativeLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_below="@id/fragment_profile_client_phone"
+        android:background="@drawable/gray_row_style">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_home_black1_24dp" />
+
+        <Spinner
+            android:id="@+id/fragment_profile_client_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2xl"
+            android:background="@android:color/transparent"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_toEndOf="@+id/home"
+            />
+
+        <ImageView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_downward_black1_24dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_3xl"
+        android:layout_marginEnd="@dimen/dim_3xl"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_below="@id/city"
+        android:background="@drawable/gray_row_style"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_home_black1_24dp" />
+
+        <Spinner
+            android:id="@+id/fragment_profile_client_region"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2xl"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginLeft="5dp"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:id="@+id/spiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_downward_black1_24dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/Progress_Bar"
+        android:layout_centerInParent="true"
+        style="@style/StyleProgressBar" />
+
+    <Button
+        android:id="@+id/fragment_profile_client_edit"
+        android:layout_width="@dimen/dim_15xl"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/region"
+        android:text="@string/edit"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style"
+        android:foreground="?attr/selectableItemBackground" />
+
+
+
+</RelativeLayout>

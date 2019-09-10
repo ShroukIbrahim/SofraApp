@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    android:background="@color/white">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/fragment_profile_restaurant_image"
+            android:layout_width="@dimen/dim_10xl"
+            android:layout_height="@dimen/dim_10xl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_2xl"
+            android:layout_marginBottom="@dimen/dim_3xl"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/reslogo" />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_profile_restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_profile_restaurant_image"
+            android:textColorLink="@color/white"
+            android:hint="@string/restaurant_name"
+            android:textColorHint="@color/black"
+            android:background="@drawable/gray_row_style"
+            android:drawableStart="@drawable/ic_perm_identity_black1_24dp"
+            android:inputType="text"
+            android:drawablePadding="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_profile_restaurant_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_profile_restaurant_name"
+            android:hint="@string/email"
+            android:background="@drawable/gray_row_style"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_profile_restaurant_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_profile_restaurant_email"
+            android:textColorLink="@color/white"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/black"
+            android:background="@drawable/gray_row_style"
+            android:drawableStart="@drawable/ic_local_phone_black_24dp"
+            android:inputType="phone"
+            android:drawablePadding="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <RelativeLayout
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:layout_below="@id/fragment_profile_restaurant_phone"
+            android:background="@drawable/gray_row_style">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home_black1_24dp" />
+
+            <Spinner
+                android:id="@+id/fragment_profile_restaurant_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:background="@android:color/transparent"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_marginEnd="@dimen/dim_3xl"
+                android:layout_toEndOf="@+id/home"
+                />
+
+            <ImageView
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_downward_black1_24dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:layout_below="@id/city"
+            android:background="@drawable/gray_row_style"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home_black1_24dp" />
+
+            <Spinner
+                android:id="@+id/fragment_profile_restaurant_region"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_3xl"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/spiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_downward_black1_24dp" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_profile_restaurant_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/region"
+            android:textColorLink="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/gray_row_style"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_profile_restaurant_cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_profile_restaurant_password"
+            android:textColorLink="@color/white"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/gray_row_style"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_3xl"
+            android:layout_marginEnd="@dimen/dim_3xl"
+            android:layout_marginBottom="@dimen/dim_2xl"/>
+    <ProgressBar
+        android:id="@+id/Progress_Bar"
+        style="@style/StyleProgressBar" />
+
+        <Button
+            android:id="@+id/fragment_profile_restaurant_next"
+            android:layout_width="@dimen/dim_15xl"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_profile_restaurant_cpassword"
+            android:text="@string/next"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_style"
+            android:layout_marginBottom="@dimen/dim_5xl"
+            android:foreground="?attr/selectableItemBackground" />
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
